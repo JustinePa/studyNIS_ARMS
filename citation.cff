@@ -1,0 +1,9 @@
+cff-version: 1.2.0
+message: "If you use these scripts, please cite it as below."
+authors:
+- family-names: "Pagnier"
+  given-names: "Justine"
+  orcid: "https://orcid.org/0000-0002-6531-1374"
+title: "NIS_ARMS_visualisation"
+date-released: 2024-20-06
+url: "https://github.com/JustinePa/studyNIS_ARMS"
