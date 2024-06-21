@@ -1,8 +1,16 @@
+# This script is used to calculate and plot the number of NIS found in each observatory
+
+# Load, and install if needed, the R packages
+library(phyloseq)
+library(dplyr)
+library(tibble)
+library(ggplot2)
+
 # Set working directory
 setwd("C:/Users/Justine/OneDrive/Documents/ARMS_FELLOWSHIP/invasivePaper/finalData")
 
 # Load elements to build a phyloseq object
-otu_mat<- read.csv("ARMS_final_NIS_presence_absence_cleaned_filtered.csv")
+otu_mat<- read.csv("ARMS_final_NIS_presence_absence_cleaned_filtered.csv") # pick "_cleaned_filtered" if you only want occurrences of true NIS (i.e. that are non-indigenous in the observatory in question)
 tax_mat<- read.csv("NIS_taxonomy.csv")
 samples_df <- read.csv("Observatories.csv")
 
@@ -40,7 +48,6 @@ nis_data <- data.frame(Observatory = names(nis_counts_per_obs), Count = nis_coun
 
 # Reorder the factor levels based on the count in descending order
 nis_data$Observatory <- factor(nis_data$Observatory, levels = nis_data$Observatory[order(-nis_data$Count)])
-
 
 # Create the bar plot
 ggplot(nis_data, aes(x = Observatory, y = Count, fill = Observatory)) +
