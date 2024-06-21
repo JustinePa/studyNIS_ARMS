@@ -1,6 +1,8 @@
+# This script is used to process and reformat the curated ASV counts tables coming from the protocol "ARMS-MBON 18SrRNA and COI gene metabarcoding: scanning for non indigenous species (Daraghmeh, 2024)
+
+# Install if needed, and load packages
 library(dplyr)
 library(plyr)
-library(dplyr)
 library(tidyr)
 
 
