@@ -1,3 +1,5 @@
+# This script is used to extract GBIF occurrences (global or european) for species of interest and plot them on a map (world or Europe) alongside with occurrences on ARMS unit
+
 # Install if needed, and load the following packages:
 library(rgbif)
 library(sf)
