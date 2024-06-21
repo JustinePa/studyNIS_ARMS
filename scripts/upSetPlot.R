@@ -1,17 +1,18 @@
-## This script is used to make the UpSet plot ##
+## This script is used to make the UpSet plots ##
 
 # Install if needed and load the packages
 library(UpSetR)
 library(dplyr)
 library(phyloseq)
 library(ggplot2)
+library(tibble)
 
 # Set working directory
 setwd("C:/Users/Justine/OneDrive/Documents/ARMS_FELLOWSHIP/invasivePaper/finalData")
 
 ## Build a phyloseq object
 # Load elements to build a phyloseq object
-otu_mat<- read.csv("ARMS_final_NIS_presence_absence_cleaned_filtered.csv")
+otu_mat<- read.csv("ARMS_final_NIS_presence_absence_cleaned_filtered.csv") # pick "_cleaned_filtered" for only having true NIS occurrences (occurrences in locations where the species is introduced), for all occurrences pick "_cleaned.csv"
 tax_mat<- read.csv("NIS_taxonomy.csv")
 samples_df <- read.csv("Observatories.csv")
 
@@ -45,7 +46,7 @@ binary_table <- as.data.frame(binary_table)
 write.table(binary_table,"presence_absence_per_obs.txt",sep="\t",row.names=T)
 
 
-## Create UpSet plot
+## Create the UpSet plot
 
 # Define colors from the image and pick three
 colors <- c("#1B9E77", "#D95F02", "#7570B3", "#E7298A", "#66A61E", "#E6AB02", "#A6761D")
@@ -150,28 +151,3 @@ species_in_all <- Reduce(intersect, taxa_lists)
 
 # Print species found in all observatories
 print(species_in_all)
-
-
-# Sum the binary NIS data per observatory
-nis_counts_per_obs <- colSums(binary_table)
-
-# Convert to a data frame for plotting
-nis_data <- data.frame(Observatory = names(nis_counts_per_obs), Count = nis_counts_per_obs)
-
-# Reorder the factor levels based on the count in descending order
-nis_data$Observatory <- factor(nis_data$Observatory, levels = nis_data$Observatory[order(-nis_data$Count)])
-
-
-# Create the bar plot
-ggplot(nis_data, aes(x = Observatory, y = Count, fill = Observatory)) +
-  geom_bar(stat = "identity", show.legend = FALSE) +  # Draw the bars
-  geom_text(aes(label = Count), vjust = -0.5, color = "black") +  # Add text labels above bars
-  theme_minimal() +
-  labs(x = "Observatory",
-       y = "Count of NIS") +
-  theme(axis.text.x = element_text(angle = 45, hjust = 1),  # Rotate x-axis labels for better readability
-        panel.grid.major = element_blank(),  # Remove major grid lines
-        panel.grid.minor = element_blank())  # Remove minor grid lines
-
-# Save the plot
-ggsave("NIS_per_Observatory_filtered.pdf", width = 10, height = 8)
