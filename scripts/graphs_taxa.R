@@ -4,12 +4,10 @@
 library(readxl)   
 library(dplyr)    
 library(ggplot2)  
-library(RColorBrewer)
 library(scales)
 library(forcats)
 library(tidyr)
 library(RColorBrewer)
-library(reshape2)
 library(ggpubr)
 
 # Set working directory
@@ -99,7 +97,7 @@ p1 <- ggplot(count_phylum_ordered, aes(x = "", y = n, fill = Phylum)) +
 print(p1)
 
 
-ggsave("phylum_pie_chart_2.pdf", width = 10, height = 8, dpi = 300) # Save the plot
+ggsave("phylum_pie_chart.pdf", width = 10, height = 8, dpi = 300) # Save the plot
 
 
 ## Counting and plotting the number of NIS found in each observatory ##
