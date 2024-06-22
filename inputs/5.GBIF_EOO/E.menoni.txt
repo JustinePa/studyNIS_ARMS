@@ -1,0 +1,3 @@
+Sampling Event	decimalLatitude	decimalLongitude
+RavM3_20210422_20210722		44.492426	12.287623
+
