@@ -1,25 +1,34 @@
-## studyNIS_ARMS
+# studyNIS_ARMS
 
-# Project Description
+## Project Description
 
-This repository contains scripts and their inputs, used for the analysis performed for the article "Broad-scale detection of non-indigenous species in marine coastal ecosystems using Autonomous Reef Monitoring Structures and DNA metabarcoding"
+This repository contains scripts and their inputs used for the analysis performed for the article titled "Broad-scale detection of non-indigenous species in marine coastal ecosystems using Autonomous Reef Monitoring Structures and DNA metabarcoding."
 
-# Contents
+## Contents
 
-scripts: Contains the five different scripts used after the manual curation of the NIS list
+### Scripts
+This directory contains the five different scripts used after the manual curation of the NIS list:
 
-1.processNIScuratedLists.R: process the COI and 18S ASVs count tables after curation (i.e. removal of ASVs/mOTUS that did not make it through the taxonomic check or the introduction status check), merge them, and clean them (i.e. remove sampling events where no NIS were detected - empty columns).
+1. **`processNIScuratedLists.R`**  
+   Process the COI and 18S ASVs count tables after curation (i.e., removal of ASVs/mOTUs that did not make it through the taxonomic check or the introduction status check), merge them, and clean them (i.e., remove sampling events where no NIS were detected - empty columns).
 
-2.graph_taxa.R: identify the main phyla and the 5 most widespread NIS + make graphs
+2. **`graph_taxa.R`**  
+   Identify the main phyla and the 5 most widespread NIS and make graphs.
 
-3.NISperobs.R: calculate the number of NIS detected in each observatory (both options possible: all occurrences of all NIS, or occurrences of NIS only in observatories where considered alien)
+3. **`NISperobs.R`**  
+   Calculate the number of NIS detected in each observatory (both options possible: all occurrences of all NIS, or occurrences of NIS only in observatories where considered alien).
 
-4.upSetPlot.R: build a phyloseq object to then build an Upset plot (both options possible: all occurrences of all NIS, or occurrences of NIS only in observatories where considered alien)
+4. **`upSetPlot.R`**  
+   Build a phyloseq object to then build an Upset plot (both options possible: all occurrences of all NIS, or occurrences of NIS only in observatories where considered alien).
 
-5.GBIF_EOO.R: for NIS potentially detected in new areas, get occurrences from GBIF, map the known area of extent together with occurrences from ARMS observatories to identify to one occurring outside
+5. **`GBIF_EOO.R`**  
+   For NIS potentially detected in new areas, get occurrences from GBIF, map the known area of extent together with occurrences from ARMS observatories to identify one occurring outside.
 
+### Inputs
 
-inputs: Contains all inputs needed to run the above scripts
+Contains all inputs needed to run the above scripts.
 
+### Outputs
 
-outputs: Output from scripts, including tables and figures.
+Output from scripts, including tables and figures.
+
