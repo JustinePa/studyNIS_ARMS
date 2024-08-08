@@ -7,7 +7,7 @@ library(rnaturalearth)
 library(ggplot2)
 
 # Set working directory
-setwd("C:/Users/Justine/OneDrive/Documents/ARMS_FELLOWSHIP/invasivePaper/scripts/GBIF_AOO")
+setwd("~/invasivePaper/scripts/GBIF_AOO")
 
 # Retrieve world map data
 world_map <- ne_countries(scale = "medium", returnclass = "sf")
@@ -45,7 +45,7 @@ hpts <- chull(gbif_coords$decimalLongitude, gbif_coords$decimalLatitude)
 hpts <- c(hpts, hpts[1])
 
 # Load point of detection by ARMS
-ARMS <- read.delim("~/ARMS_FELLOWSHIP/invasivePaper/scripts/GBIF_AOO/O.ovata.txt")
+ARMS <- read.delim("~/invasivePaper/scripts/GBIF_AOO/O.ovata.txt")
 
 ## Build the map
 gg <- ggplot() +
@@ -108,7 +108,7 @@ hpts <- c(hpts, hpts[1])
 
 
 # Load point of detection by ARMS
-ARMS <- read.delim("~/ARMS_FELLOWSHIP/invasivePaper/scripts/GBIF_AOO/B.neritina.txt")
+ARMS <- read.delim("~/invasivePaper/scripts/GBIF_AOO/B.neritina.txt")
 
 ## Build the map
 ## Build the map
@@ -171,7 +171,7 @@ hpts <- c(hpts, hpts[1])
 
 
 # Load point of detection by ARMS
-ARMS <- read.delim("~/ARMS_FELLOWSHIP/invasivePaper/scripts/GBIF_AOO/B.muscus.txt")
+ARMS <- read.delim("~/invasivePaper/scripts/GBIF_AOO/B.muscus.txt")
 
 ## Build the map
 ## Build the map
@@ -232,7 +232,7 @@ hpts <- c(hpts, hpts[1])
 
 
 # Load point of detection by ARMS
-ARMS <- read.delim("~/ARMS_FELLOWSHIP/invasivePaper/scripts/GBIF_AOO/E.menoni.txt")
+ARMS <- read.delim("~/invasivePaper/scripts/GBIF_AOO/E.menoni.txt")
 
 ## Build the map
 ## Build the map
@@ -294,7 +294,7 @@ hpts <- c(hpts, hpts[1])
 
 
 # Load point of detection by ARMS
-ARMS <- read.delim("~/ARMS_FELLOWSHIP/invasivePaper/scripts/GBIF_AOO/H.momus.txt")
+ARMS <- read.delim("~/invasivePaper/scripts/GBIF_AOO/H.momus.txt")
 
 ## Build the map
 ## Build the map
@@ -355,7 +355,7 @@ hpts <- c(hpts, hpts[1])
 
 
 # Load point of detection by ARMS
-ARMS <- read.delim("~/ARMS_FELLOWSHIP/invasivePaper/scripts/GBIF_AOO/F.delicia.txt")
+ARMS <- read.delim("~/invasivePaper/scripts/GBIF_AOO/F.delicia.txt")
 
 ## Build the map
 ## Build the map
@@ -417,7 +417,7 @@ hpts <- c(hpts, hpts[1])
 
 
 # Load point of detection by ARMS
-ARMS <- read.delim("~/ARMS_FELLOWSHIP/invasivePaper/scripts/GBIF_AOO/A.misakianum.txt")
+ARMS <- read.delim("~/invasivePaper/scripts/GBIF_AOO/A.misakianum.txt")
 
 ## Build the map
 ## Build the map
