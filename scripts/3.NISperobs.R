@@ -7,7 +7,7 @@ library(tibble)
 library(ggplot2)
 
 # Set working directory
-setwd("C:/Users/Justine/OneDrive/Documents/ARMS_FELLOWSHIP/invasivePaper/finalData")
+setwd("~/invasivePaper/finalData")
 
 # Load elements to build a phyloseq object
 otu_mat<- read.csv("ARMS_final_NIS_presence_absence_cleaned_filtered.csv") # pick "_cleaned_filtered" if you only want occurrences of true NIS (i.e. that are non-indigenous in the observatory in question)
