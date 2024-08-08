@@ -2,7 +2,7 @@
 
 ## Project Description
 
-This repository contains scripts and their inputs used for the analysis performed for the article titled "Assessing the effectiveness of genetic observatory networks in detecting and monitoring marine non-indigenous species."
+This repository contains scripts and their inputs used for the analysis performed for the manuscript titled "Assessing the effectiveness of genetic observatory networks in detecting and monitoring marine non-indigenous species." (Justine Pagnier, Nauras Daraghmeh, Matthias Obst)
 
 ## Contents
 
