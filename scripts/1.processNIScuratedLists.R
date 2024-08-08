@@ -8,7 +8,7 @@ library(tidyr)
 
 ## COI ##
 
-setwd("C:/Users/Justine/OneDrive/Documents/ARMS_FELLOWSHIP/invasivePaper/finalData")
+setwd("~/invasivePaper/finalData")
 
 # Get the table manually curated in Excel
 nis_taxa_counts<-read.table("NIS_MOTU_ASV_counts_COI_new_curated.txt",sep="\t",header=T,check.names= F)
