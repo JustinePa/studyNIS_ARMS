@@ -2,7 +2,7 @@
 
 ## Project Description
 
-This repository contains scripts and their inputs used for the analysis performed for the article titled "Broad-scale detection of non-indigenous species in marine coastal ecosystems using Autonomous Reef Monitoring Structures and DNA metabarcoding."
+This repository contains scripts and their inputs used for the analysis performed for the article titled "Assessing the effectiveness of genetic observatory networks in detecting and monitoring marine non-indigenous species.."
 
 ## Contents
 
