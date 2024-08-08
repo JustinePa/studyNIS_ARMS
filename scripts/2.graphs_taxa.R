@@ -11,7 +11,7 @@ library(RColorBrewer)
 library(ggpubr)
 
 # Set working directory
-setwd("C:/Users/Justine/OneDrive/Documents/ARMS_FELLOWSHIP/invasivePaper/finalData")
+setwd("~/invasivePaper/finalData")
 
 # Build a file containing full taxonomic information of NIS
 # Load taxonomy table
@@ -103,7 +103,7 @@ ggsave("phylum_pie_chart.pdf", width = 10, height = 8, dpi = 300) # Save the plo
 ## Counting and plotting the number of NIS found in each observatory ##
 
 # Set working directory
-setwd("C:/Users/Justine/OneDrive/Documents/ARMS_FELLOWSHIP/invasivePaper/finalData")
+setwd("~/invasivePaper/finalData")
 
 ## Count number of NIS found in each observatory
 # Load Presence/Absence table 
@@ -140,7 +140,7 @@ write.table(species_observatory_count, file = "obs_per_NIS.csv")
 ## Plot the 5 main species
 
 # Set working directory
-setwd("C:/Users/Justine/OneDrive/Documents/ARMS_FELLOWSHIP/invasivePaper/finalData")
+setwd("~/invasivePaper/finalData")
 
 # Load table with number of observatories where each NIS has been found
 ObsPerNIS <- read.csv("obs_per_NIS.csv",sep=",")
