@@ -28,7 +28,3 @@ This directory contains the five different scripts used after the manual curatio
 
 Contains all inputs needed to run the above scripts.
 
-### Outputs
-
-Output from scripts, including tables and figures.
-
