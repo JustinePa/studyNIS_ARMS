@@ -8,7 +8,7 @@ library(ggplot2)
 library(tibble)
 
 # Set working directory
-setwd("C:/Users/Justine/OneDrive/Documents/ARMS_FELLOWSHIP/invasivePaper/finalData")
+setwd("~/invasivePaper/finalData")
 
 ## Build a phyloseq object
 # Load elements to build a phyloseq object
