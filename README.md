@@ -2,7 +2,7 @@
 
 ## Project Description
 
-This repository contains scripts and their inputs used for the analysis performed for the manuscript titled "Assessing the effectiveness of genetic observatory networks in detecting and monitoring marine non-indigenous species." (Justine Pagnier, Nauras Daraghmeh, Matthias Obst)
+This repository contains scripts and their inputs used for the analysis performed for the manuscript titled "Using the long-term genetic monitoring network ARMS-MBON to detect marine non-indigenous species along the European coasts." (Justine Pagnier, Nauras Daraghmeh, Matthias Obst)
 
 ## Contents
 
