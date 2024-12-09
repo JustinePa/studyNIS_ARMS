@@ -1,6 +1,13 @@
 # This script is used to extract GBIF occurrences (global or european) for species of interest and plot them on a map (world or Europe) alongside with occurrences on ARMS unit
+# Author: Justine Pagnier
+# Date: July 2024
 
 # Install if needed, and load the following packages:
+required_packages <- c("rgbif", "sf", "rnaturalearth", "ggplot2", "dplyr")
+installed_packages <- installed.packages()
+for (pkg in required_packages) {
+  if (!(pkg %in% installed_packages)) install.packages(pkg)
+}
 library(rgbif)
 library(sf)
 library(rnaturalearth)
