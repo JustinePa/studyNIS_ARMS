@@ -1,6 +1,14 @@
 ## This script is used for graphical visualization of taxa in the NIS list ##
+# Author: Justine Pagnier
+# Date: July 2024
 
 # Install if needed, and load required libraries
+required_packages <- c("readxl", "dplyr", "ggplot2", "scales", "forcats", 
+                       "tidyr", "RColorBrewer", "ggpubr")
+installed_packages <- installed.packages()
+for (pkg in required_packages) {
+  if (!(pkg %in% installed_packages)) install.packages(pkg)
+}
 library(readxl)   
 library(dplyr)    
 library(ggplot2)  
