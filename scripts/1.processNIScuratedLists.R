@@ -1,6 +1,13 @@
 # This script is used to process and reformat the curated ASV counts tables coming from the protocol "ARMS-MBON 18SrRNA and COI gene metabarcoding: scanning for non indigenous species (Daraghmeh, 2024)
+# Author: Justine Pagnier
+# Date: July 2024
 
 # Install if needed, and load packages
+required_packages <- c("dplyr", "plyr", "tidyr")
+installed_packages <- installed.packages()
+for (pkg in required_packages) {
+  if (!(pkg %in% installed_packages)) install.packages(pkg)
+}
 library(dplyr)
 library(plyr)
 library(tidyr)
