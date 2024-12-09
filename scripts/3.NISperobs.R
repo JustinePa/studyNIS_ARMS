@@ -1,6 +1,13 @@
 # This script is used to calculate and plot the number of NIS found in each observatory
+# Author: Justine Pagnier
+# Date: July 2024
 
 # Load, and install if needed, the R packages
+required_packages <- c("phyloseq", "dplyr", "tibble", "ggplot2")
+installed_packages <- installed.packages()
+for (pkg in required_packages) {
+  if (!(pkg %in% installed_packages)) install.packages(pkg)
+}
 library(phyloseq)
 library(dplyr)
 library(tibble)
