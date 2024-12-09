@@ -1,4 +1,6 @@
 ## This script is used to make the UpSet plots ##
+# Author: Justine Pagnier
+# Date: July 2024
 
 # Install if needed and load the packages
 library(UpSetR)
@@ -67,10 +69,10 @@ upsetfreq <- upset(
   text.scale = c(4, 4, 3, 3, 3, 3)  # Adjusted sizes
 )
 
-
+# Display
 upsetfreq
 
-
+# Save
 pdf("upset_plot_freq_unfiltered.pdf", width = 24, height = 20)
 upsetfreq
 dev.off()
