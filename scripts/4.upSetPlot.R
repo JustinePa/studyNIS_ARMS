@@ -3,6 +3,11 @@
 # Date: July 2024
 
 # Install if needed and load the packages
+required_packages <- c("UpSetR", "dplyr", "phyloseq", "ggplot2", "tibble")
+installed_packages <- installed.packages()
+for (pkg in required_packages) {
+  if (!(pkg %in% installed_packages)) install.packages(pkg)
+}
 library(UpSetR)
 library(dplyr)
 library(phyloseq)
